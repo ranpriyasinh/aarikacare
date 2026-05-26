@@ -110,7 +110,7 @@ const testimonials = [
   },
 ];
 
-export default function KayaTestimonials() {
+export default function aarikacareTestimonials() {
   const trackRef = useRef(null);
 
   const [currentIndex, setCurrentIndex] = useState(testimonials.length);

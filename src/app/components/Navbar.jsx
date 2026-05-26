@@ -21,7 +21,7 @@ const navLinks = [
     href: '/services',
     dropdown: [
       { name: 'Dental Care', href: '/services/dental' },
-      { name: 'Cosmetic Care', href: '/kaya' },
+      { name: 'Cosmetic Care', href: '/aarikacare' },
     ],
   },
   { name: 'Blog', href: '/blog' },
@@ -30,7 +30,7 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
-  if (pathname === '/kaya') {
+  if (pathname === '/aarikacare') {
     return null;
   }
   

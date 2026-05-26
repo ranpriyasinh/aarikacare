@@ -47,7 +47,7 @@ const features = [
   },
 ];
 
-const WhyChooseKaya = () => {
+const WhyChooseaarikacare = () => {
   return (
     <section className="bg-gradient-to-b from-blue-50 to-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -92,4 +92,4 @@ const WhyChooseKaya = () => {
   );
 };
 
-export default WhyChooseKaya;
+export default WhyChooseaarikacare;

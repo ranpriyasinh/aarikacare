@@ -10,7 +10,7 @@ import {
   Square,
 } from "lucide-react";
 
-export default function KayaLandingPage() {
+export default function aarikacareLandingPage() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 23,

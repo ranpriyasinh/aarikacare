@@ -40,7 +40,7 @@ const solutions = [
   },
 ];
 
-export default function KayaSolutions() {
+export default function aarikacareSolutions() {
   return (
     <section className="w-full bg-[#f6f6f6] py-10">
       <div className="mx-auto max-w-5xl px-4">
