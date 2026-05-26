@@ -42,7 +42,7 @@ const features = [
   {
     id: 6,
     title: "22+ Years of Excellence",
-    description: "With two decades of medical expertise and innovation, Kaya continues to redefine skincare and haircare in India.",
+    description: "With two decades of medical expertise and innovation, Aarikacare continues to redefine skincare and haircare in India.",
     icon: Clock,
   },
 ];
@@ -55,7 +55,7 @@ const WhyChooseKaya = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Why Choose <span className="text-[#A67B5B]">Kaya Clinic?</span>
+            Why Choose <span className="text-[#A67B5B]">Aarikacare Clinic?</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             India's most trusted skin and hair clinic offering advanced dermatological solutions for every concern—from laser hair reduction and acne to anti-ageing and hair care.

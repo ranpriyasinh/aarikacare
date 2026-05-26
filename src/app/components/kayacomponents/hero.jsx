@@ -57,7 +57,7 @@ export default function KayaLandingPage() {
           <div className="flex items-center justify-center gap-2 text-white">
             <Gift size={16} />
             <span className="font-semibold text-sm">
-              Upto 50% Off On All Kaya Services
+              Upto 50% Off On All Aarikacare Services
             </span>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function KayaLandingPage() {
           <div className="mb-6 flex justify-center md:justify-center">
             <div className="text-center">
               <h2 className="text-5xl font-black tracking-tighter leading-none">
-                kaya
+                Aarikacare
               </h2>
               <p className="text-[9px] tracking-[4px] uppercase">
                 Clinic | Skin | Hair | Body
@@ -98,7 +98,7 @@ export default function KayaLandingPage() {
           {/* Paragraph */}
           <p className="mb-8 max-w-lg text-[17px] leading-8 text-[#546274]">
             From acne & pigmentation to laser hair reduction and hair
-            regrowth—Kaya's 22+ years of expertise ensures visible,
+            regrowth—Aarikacare's 22+ years of expertise ensures visible,
             lasting results.
           </p>
 

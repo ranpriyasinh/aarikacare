@@ -22,7 +22,7 @@ const solutions = [
     title: "Anti-Ageing",
     image: "/images/antiaging.jpg",
     description:
-      "Reduce signs of ageing with Kaya’s advanced fillers, anti-ageing skin systems, and youthful glow.",
+      "Reduce signs of ageing with Aarikacare’s advanced fillers, anti-ageing skin systems, and youthful glow.",
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const solutions = [
     title: "Hair Care",
     image: "/images/haircare.jpg",
     description:
-      "Advance hair health with Kaya’s Hair Regrowth solutions, repairing damage & hair fall.",
+      "Advance hair health with Aarikacare’s Hair Regrowth solutions, repairing damage & hair fall.",
   },
 ];
 

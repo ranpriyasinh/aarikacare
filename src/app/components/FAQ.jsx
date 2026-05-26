@@ -4,60 +4,48 @@ import { useState } from 'react';
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
-
-  const faqs = [
-    // 🦷 DENTAL
-    {
-      question: 'What dental services do you offer at AARIKACARE?',
-      answer:
-        'We offer complete dental care including general dentistry, root canal treatment, dental implants, orthodontics, preventive care, and pediatric dentistry.',
-    },
-    {
-      question: 'How often should I visit a dentist?',
-      answer:
-        'It is recommended to visit a dentist every 6 months for routine checkups and professional cleaning to maintain good oral health.',
-    },
-    {
-      question: 'Are dental implants a good long-term solution?',
-      answer:
-        'Yes, dental implants are a durable and natural-looking solution for replacing missing teeth and can last many years with proper care.',
-    },
-
-    // ✨ COSMETIC DENTISTRY
-    {
-      question: 'What is cosmetic dentistry?',
-      answer:
-        'Cosmetic dentistry focuses on improving the appearance of your teeth and smile using treatments like teeth whitening, veneers, bonding, and smile makeovers.',
-    },
-    {
-      question: 'Is teeth whitening safe?',
-      answer:
-        'Yes, professional teeth whitening performed under dental supervision is safe and effective without damaging the enamel.',
-    },
-    {
-      question: 'What are dental veneers used for?',
-      answer:
-        'Veneers are thin shells placed on teeth to improve their appearance by fixing discoloration, chips, gaps, or minor misalignment.',
-    },
-
-    // 🏃 PHYSIOTHERAPY
-    {
-      question: 'How can physiotherapy help in recovery?',
-      answer:
-        'Physiotherapy helps restore movement, reduce pain, and improve strength using guided exercises and rehabilitation techniques.',
-    },
-    {
-      question: 'Do I need physiotherapy after surgery?',
-      answer:
-        'Yes, post-surgical physiotherapy is often recommended to speed up healing, restore mobility, and prevent complications.',
-    },
-    {
-      question: 'What conditions can physiotherapy treat?',
-      answer:
-        'Physiotherapy can treat back pain, joint injuries, sports injuries, post-surgical recovery, and mobility issues.',
-    },
-  ];
-
+const faqs = [
+  {
+    question: 'What dental services do you offer at AARIKACARE?',
+    answer:
+      'We provide complete dental care including general dentistry, root canal treatment, dental implants, orthodontics, preventive care, and pediatric dentistry.',
+  },
+  {
+    question: 'How often should I visit a dentist?',
+    answer:
+      'It is recommended to visit a dentist every 6 months for routine checkups and professional cleaning to maintain good oral health.',
+  },
+  {
+    question: 'Are dental implants a good long-term solution?',
+    answer:
+      'Yes, dental implants are a durable and natural-looking solution for replacing missing teeth and can last many years with proper care.',
+  },
+  {
+    question: 'Is teeth whitening safe?',
+    answer:
+      'Yes, professional teeth whitening performed under dental supervision is safe and effective without damaging the enamel.',
+  },
+  {
+    question: 'What are dental veneers used for?',
+    answer:
+      'Veneers are thin shells placed on teeth to improve their appearance by correcting discoloration, chips, gaps, or minor misalignment.',
+  },
+  {
+    question: 'What is root canal treatment?',
+    answer:
+      'Root canal treatment is a dental procedure used to remove infected or damaged pulp from inside a tooth, relieve pain, and save the natural tooth.',
+  },
+  {
+    question: 'Do dental implants hurt?',
+    answer:
+      'Dental implant procedures are performed under anesthesia, so the process is usually comfortable. Mild soreness after treatment is normal and temporary.',
+  },
+  {
+    question: 'How can I maintain good oral hygiene?',
+    answer:
+      'Brush twice daily, floss regularly, use a dentist-recommended mouthwash, and schedule routine dental checkups every 6 months.',
+  },
+];
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };

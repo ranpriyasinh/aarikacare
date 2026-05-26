@@ -6,17 +6,17 @@ import { ChevronDown, Phone } from 'lucide-react';
 const faqData = [
   {
     id: 1,
-    question: "What makes Kaya Clinic different from others?",
-    answer: "Kaya Clinic is powered by the medical expertise of world-renowned dermatologists. We offer scientifically backed treatments customized for Indian skin and hair types, ensuring safety and visible results.",
+    question: "What makes Aarikacare Clinic different from others?",
+    answer: "Aarikacare Clinic is powered by the medical expertise of world-renowned dermatologists. We offer scientifically backed treatments customized for Indian skin and hair types, ensuring safety and visible results.",
   },
   {
     id: 2,
-    question: "Which treatments are available at Kaya?",
+    question: "Which treatments are available at Aarikacare?",
     answer: "We offer a wide range of treatments including Laser Hair Removal, Acne & Scar treatment, Anti-Ageing therapies, Pigmentation correction, and Hair Fall treatments.",
   },
   {
     id: 3,
-    question: "Are Kaya treatments safe for Indian skin and hair types?",
+    question: "Are Aarikacare treatments safe for Indian skin and hair types?",
     answer: "Absolutely. Our protocols and advanced technology are specifically designed and tested for Indian skin tones and hair textures, minimizing side effects.",
   },
   {
@@ -48,7 +48,7 @@ const FrequentlyAskedQuestions = () => {
             Frequently Asked <span className="text-[#A67B5B]">Questions</span>
           </h2>
           <p className="text-gray-500 text-sm md:text-base">
-            Get answers to the most common questions about Kaya Clinic's treatments and services
+            Get answers to the most common questions about Aarikacare Clinic's treatments and services
           </p>
         </div>
 

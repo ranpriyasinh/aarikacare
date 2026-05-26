@@ -16,7 +16,7 @@ const VisibleResults = () => {
         {/* Disclaimer */}
         <p className="text-gray-500 text-xs sm:text-sm leading-relaxed max-w-3xl mx-auto px-2">
           *Disclaimer: Results may vary based on individual skin or hair type, treatment area, and consistency. 
-          A personalized consultation with a certified Kaya dermatologist is essential before starting any procedure.
+          A personalized consultation with a certified Aarikacare dermatologist is essential before starting any procedure.
         </p>
         
       </div>

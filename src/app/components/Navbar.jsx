@@ -21,7 +21,7 @@ const navLinks = [
     href: '/services',
     dropdown: [
       { name: 'Dental Care', href: '/services/dental' },
-      { name: 'Cosmetic Care', href: '/services/cosmetic' },
+      { name: 'Cosmetic Care', href: '/kaya' },
     ],
   },
   { name: 'Blog', href: '/blog' },
