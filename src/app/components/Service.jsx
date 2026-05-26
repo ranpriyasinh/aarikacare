@@ -1,8 +1,11 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 
 export default function ServicesSection() {
+  const [flippedIndex, setFlippedIndex] = useState(null);
+
   const services = [
     {
       title: 'Orthodontic Treatment',
@@ -119,60 +122,65 @@ export default function ServicesSection() {
     },
   ];
 
+  const handleCardClick = (index) => {
+    setFlippedIndex(flippedIndex === index ? null : index);
+  };
+
   return (
     <section className="py-16 md:py-20 bg-[#F5EFE6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
           Our Services
         </h2>
 
-        {/* Services Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="group h-[220px] cursor-pointer [perspective:1000px]"
-            >
-              {/* Flip Container */}
-              <div className="relative w-full h-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                
-                {/* Front Side (Icon + Title) */}
-                <div className="absolute inset-0 bg-white rounded-xl shadow-sm group-hover:shadow-md transition-shadow p-6 flex flex-col items-center justify-center [backface-visibility:hidden]">
-                  <div className="text-gray-800 mb-4 transition-transform duration-300 group-hover:scale-110">
-                    {service.icon}
+          {services.map((service, index) => {
+            const isFlipped = flippedIndex === index;
+            return (
+              <div
+                key={index}
+                className="group h-[220px] cursor-pointer [perspective:1000px]"
+                onClick={() => handleCardClick(index)}
+                onTouchStart={(e) => e.stopPropagation()}
+              >
+                <div 
+                  className={`relative w-full h-full transition-all duration-500 [transform-style:preserve-3d] 
+                    ${isFlipped ? '[transform:rotateY(180deg)]' : 'group-hover:[transform:rotateY(180deg)]'}`}
+                >
+                  {/* Front Side */}
+                  <div className="absolute inset-0 bg-white rounded-xl shadow-sm group-hover:shadow-md transition-shadow p-6 flex flex-col items-center justify-center [backface-visibility:hidden]">
+                    <div className="text-gray-800 mb-4 transition-transform duration-300 group-hover:scale-110">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-sm font-medium text-gray-900 text-center leading-tight">
+                      {service.title}
+                    </h3>
                   </div>
-                  <h3 className="text-sm font-medium text-gray-900 text-center leading-tight">
-                    {service.title}
-                  </h3>
-                </div>
 
-                {/* Back Side (Image) */}
-                <div className="absolute inset-0 bg-white rounded-xl shadow-md overflow-hidden [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                  <div className="relative w-full h-full">
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      className="object-cover"
-                      priority={index < 5}
-                      onError={(e) => {
-                        // Fallback if image doesn't exist
-                        e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"%3E%3Crect fill="%23F3F4F6" width="400" height="400"/%3E%3Ctext fill="%239CA3AF" font-family="Arial" font-size="18" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EImage%3C/text%3E%3C/svg%3E';
-                      }}
-                    />
-                    {/* Dark Overlay for Text Readability */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end justify-center pb-4 px-3">
-                      <h3 className="text-white text-sm font-medium text-center leading-tight">
-                        {service.title}
-                      </h3>
+                  {/* Back Side */}
+                  <div className="absolute inset-0 bg-white rounded-xl shadow-md overflow-hidden [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={service.image}
+                        alt={service.title}
+                        fill
+                        className="object-cover"
+                        priority={index < 5}
+                        onError={(e) => {
+                          e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"%3E%3Crect fill="%23F3F4F6" width="400" height="400"/%3E%3Ctext fill="%239CA3AF" font-family="Arial" font-size="18" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EImage%3C/text%3E%3C/svg%3E';
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end justify-center pb-4 px-3">
+                        <h3 className="text-white text-sm font-medium text-center leading-tight">
+                          {service.title}
+                        </h3>
+                      </div>
                     </div>
                   </div>
                 </div>
-
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

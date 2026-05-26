@@ -163,7 +163,7 @@ export default function AppointmentSection() {
                       onChange={handleChange}
                       className="w-4 h-4 text-blue-600 rounded border-gray-300 focus:ring-blue-500"
                     />
-                    <span className="text-sm text-gray-700">Physio</span>
+                    <span className="text-sm text-gray-700">Cosmetic</span>
                   </label>
                 </div>
               </div>
