@@ -5,10 +5,13 @@ import WhyChooseAarikacare from '../components/aarikacarecomponents/whyaarikacar
 import FrequentlyAskedQuestions from '../components/aarikacarecomponents/aarikacareFrequentlyAskedQuestions';
 import VisibleResults from '../components/aarikacarecomponents/aarikacareresult';
 import TreatmentTags from '../components/aarikacarecomponents/aarikacaretreatment';
+import Navbar  from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <Navbar/>
       <AarikacareLandingPage />
       <AarikacareSolutions />
       <AarikacareTestimonials />
@@ -16,6 +19,7 @@ export default function Home() {
       <FrequentlyAskedQuestions />
       <VisibleResults />
       <TreatmentTags />
+      <Footer/>
     </div>
   );
 }

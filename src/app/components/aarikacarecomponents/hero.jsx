@@ -49,8 +49,8 @@ export default function aarikacareLandingPage() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#edf4fa] text-slate-800 overflow-hidden">
-      
+    // <div className="min-h-screen bg-[#edf4fa] text-slate-800 overflow-hidden">
+  <div className="min-h-screen bg-[#edf4fa] text-slate-800 overflow-hidden pt-20">      
       {/* Top Banner */}
       <div className="pt-4 flex justify-center">
         <div className="animate-pulse rounded-full bg-[#c7a28f] px-10 py-3 shadow-sm">

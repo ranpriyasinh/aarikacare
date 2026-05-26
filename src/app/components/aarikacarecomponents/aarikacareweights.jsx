@@ -24,7 +24,7 @@ export default function ScrollFloatingCTA() {
     <>
       {/* LEFT - Call Button */}
       <a
-        href="tel:+911234567890"
+        href="tel:+91 73599 00990"
         className="fixed bottom-6 left-6 z-50 flex flex-col items-center"
       >
         <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-[#b27652] text-white shadow-lg">

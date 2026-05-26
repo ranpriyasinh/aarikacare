@@ -2,7 +2,7 @@
 import Footer from '../components/Footer';
 import BlogSection from '../components/blogsection';
 
-import AboutPageHeader from '../components/AboutusPageHeader';
+import AboutPageHeader from '../components/BlogAboutusPageHeader';
 
 
 export default function Home() {
