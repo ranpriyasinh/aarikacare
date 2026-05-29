@@ -18,6 +18,10 @@ export default function ServicesMarquee() {
     'Dental Bridges',
     'Cosmetic Dentistry',
     'Full Mouth Reconstruction',
+    'Laser Hair Reduction',
+    'Skin Treatment',
+    'Acne-Pigmentation',
+    'Haircare'
   ];
 
   return (
