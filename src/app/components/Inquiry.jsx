@@ -63,7 +63,7 @@ export default function AppointmentSection() {
 
             <div className="space-y-4 text-white/90 text-base md:text-lg leading-relaxed">
               <p>
-                At AARIKACARE Dental & CosmeticCare, we make scheduling your appointment easy and convenient. Whether you're looking for a dental check-up, orthodontic consultation, or physiotherapy session, our team is here to help. Simply fill out the form or contact us directly, and we'll find a time that works best for you.
+                At AARIKACARE Dental & CosmeticCare, we make scheduling your appointment easy and convenient. Whether you're looking for a dental check-up or Cosmetic consultation, our team is here to help. Simply fill out the form or contact us directly, and we'll find a time that works best for you.
               </p>
               <p>
                 Our clinic is dedicated to providing exceptional care in a welcoming environment. We look forward to serving you and ensuring you receive the highest level of care.

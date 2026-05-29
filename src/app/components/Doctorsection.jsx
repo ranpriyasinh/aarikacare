@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function DoctorsSection() {
   const doctor = {
     name: 'Dr. Mansi Patel',
-    role: 'Orthodontist & Cosmetic Smile Specialist',
+    role: 'Dental surgeon and Cosmetologist ',
     image: '/doctors/d.jpg',
     description:
       'Dedicated to designing healthy, confident smiles through advanced orthodontic and cosmetic dental care. With a focus on precision, aesthetics, and patient comfort, every treatment is carefully planned to achieve natural-looking, long-lasting results tailored to individual facial harmony.',
@@ -21,7 +21,7 @@ export default function DoctorsSection() {
             Meet Our Specialist
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
-            Expert orthodontic and cosmetic dental care focused on precision, aesthetics, and patient comfort.
+            Expert In general dentistry  and cosmetic care focused on precision, aesthetics, and patient comfort.
           </p>
         </div>
 
